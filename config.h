@@ -50,8 +50,8 @@ static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%"
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
-static const char *brupcmd[] = { "sudo", "xbacklight", "-inc", "10", NULL };
-static const char *brdowncmd[] = { "sudo", "xbacklight", "-dec", "10", NULL };
+static const char *brupcmd[] = { "sudo", "light", "-A", "10", NULL };
+static const char *brdowncmd[] = { "sudo", "light", "-U", "10", NULL };
 
 static const char *cmdPrtSc[]  = { "scrot", "-d3", "/home/$USER/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL };
 
@@ -59,7 +59,7 @@ static const char *cmdPrtSc[]  = { "scrot", "-d3", "/home/$USER/Pictures/screens
 
 /*Programs bindings*/
 //Win + b -> Brave Browser
-static const char *execbrave[]={"brave", NULL};
+static const char *execbrave[]={"brave-browser", NULL};
 
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */

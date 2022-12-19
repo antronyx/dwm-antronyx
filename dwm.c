@@ -2141,6 +2141,8 @@ main(int argc, char *argv[])
 	checkotherwm();
 	setup();
 	system("xsetroot -solid grey");
+	system("~/dwm-bar/dwm_bar.sh &");
+
 #ifdef __OpenBSD__
 	if (pledge("stdio rpath proc exec", NULL) == -1)
 		die("pledge");
